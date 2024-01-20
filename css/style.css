@@ -3106,7 +3106,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 25px;
-  background: #d291bc;
+  background: #bd1c87;
   padding: 3em 0;
   z-index: 0;
   position: relative;
@@ -3114,7 +3114,7 @@ textarea.form-control {
 }
 
 .ftco-footer .overlay {
-  opacity: .3;
+  opacity:.2;
 }
 
 .ftco-footer .ftco-footer-widget h2 {
