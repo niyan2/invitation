@@ -5,6 +5,7 @@
 
 <head>
   <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="stylesnew.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&amp;display=swap"
@@ -17,15 +18,113 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
-  <script
-    nonce="e6f42cc5-39b6-4d3b-bb78-23100b0d843f">(function (w, d) { !function (a, b, c, d) { a[c] = a[c] || {}; a[c].executed = []; a.zaraz = { deferred: [], listeners: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return async function () { var f = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: f }) } }; for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g); a.zaraz.init = () => { var h = b.getElementsByTagName(d)[0], i = b.createElement(d), j = b.getElementsByTagName("title")[0]; j && (a[c].t = b.getElementsByTagName("title")[0].text); a[c].x = Math.random(); a[c].w = a.screen.width; a[c].h = a.screen.height; a[c].j = a.innerHeight; a[c].e = a.innerWidth; a[c].l = a.location.href; a[c].r = b.referrer; a[c].k = a.screen.colorDepth; a[c].n = b.characterSet; a[c].o = (new Date).getTimezoneOffset(); if (a.dataLayer) for (const n of Object.entries(Object.entries(dataLayer).reduce(((o, p) => ({ ...o[1], ...p[1] })), {}))) zaraz.set(n[0], n[1], { scope: "page" }); a[c].q = []; for (; a.zaraz.q.length;) { const q = a.zaraz.q.shift(); a[c].q.push(q) } i.defer = !0; for (const r of [localStorage, sessionStorage]) Object.keys(r || {}).filter((t => t.startsWith("_zaraz_"))).forEach((s => { try { a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s)) } catch { a[c]["z_" + s.slice(7)] = r.getItem(s) } })); i.referrerPolicy = "origin"; i.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c]))); h.parentNode.insertBefore(i, h) };["complete", "interactive"].includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+  <!-- new code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Initialize Magnific Popup
+    $('.image-popup').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  });
+</script>
+  <style>
+    .gallery-item {
+      /* Optional: You can add more styles as needed */
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-item a {
+      /* Add padding to all sides */
+      padding: 30px;
+      margin:10px;
+      border-radius: 25px;
+      display: block;
+      background-size:auto; /* Set the background size to cover the container */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Ensure the anchor takes up the full padding space */
+    }
+
+    .gallery-item:hover {
+      /* Optional: Add a hover effect */
+      transform: scale(1.05);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      max-width: 80%;
+      max-height: 80%;
+      margin: auto;
+      position: relative;
+    }
+
+    .modal-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    
+  </style>
+  <!-- <script
+    nonce="e6f42cc5-39b6-4d3b-bb78-23100b0d843f">(function (w, d) 
+    { !function (a, b, c, d) { a[c] = a[c] || {}; a[c].executed = []; a.zaraz = 
+    { deferred: [], listeners: [] }; a.zaraz.q = []; a.zaraz._f = function (e) 
+    { return async function () { var f = Array.prototype.slice.call(arguments); 
+    a.zaraz.q.push({ m: e, a: f }) } }; for (const g of ["track", "set", "debug"]) 
+    a.zaraz[g] = a.zaraz._f(g); a.zaraz.init = () => { var h = b.getElementsByTagName(d)[0], 
+    i = b.createElement(d), j = b.getElementsByTagName("title")[0]; j && (a[c].t =
+     b.getElementsByTagName("title")[0].text); a[c].x = Math.random(); a[c].w = 
+     a.screen.width; a[c].h = a.screen.height; a[c].j = a.innerHeight; a[c].e =
+      a.innerWidth; a[c].l = a.location.href; a[c].r = b.referrer; a[c].k = 
+      a.screen.colorDepth; a[c].n = b.characterSet; a[c].o =
+       (new Date).getTimezoneOffset(); if (a.dataLayer)
+        for (const n of Object.entries(Object.entries(dataLayer).reduce(((o, p) => 
+        ({ ...o[1], ...p[1] })), {}))) zaraz.set(n[0], n[1], { scope: "page" }); a[c].q = []; 
+        for (; a.zaraz.q.length;) { const q = a.zaraz.q.shift(); a[c].q.push(q) } i.defer = !0; 
+        for (const r of [localStorage, sessionStorage]) Object.keys(r || {}).filter((t =>
+         t.startsWith("_zaraz_"))).forEach((s => { try { a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s)) }
+          catch { a[c]["z_" + s.slice(7)] = r.getItem(s) } })); i.referrerPolicy
+           = "origin"; i.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c])));
+            h.parentNode.insertBefore(i, h) };["complete", "interactive"]
+            .includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }
+            (w, d, "zarazData", "script"); })(window, document);</script> -->
 </head>
+
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
     id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index-2.html">Wedding Invitation</a>
+      <a class="navbar-brand" href="#">Wedding Invitation</a>
       <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
         data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
@@ -76,7 +175,7 @@
       </div>
     </div>
   </section>
-  <section class="ftco-section bg-section" id="groom-bride-section" ;>
+  <section class="ftco-section bg-section" id="groom-bride-section" >
     <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-md-12 text-center heading-section ftco-animate">
@@ -117,8 +216,8 @@
     <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-md-12 text-center heading-section ftco-animate">
-          <span class="subheading">Love Story</span>
-          <h2 class="mb-3">Timeline of Love</h2>
+          <!--<span class="subheading">Love Story</span>-->
+          <h2 class="mb-3">Our Journey</h2>
         </div>
       </div>
       <div class="row">
@@ -129,12 +228,37 @@
               <div class="timeline-panel ftco-animate text-md-right">
                 <div class="icon icon-left"><span class="flaticon-dove-1"></span></div>
                 <div class="timeline-heading">
-                  <span class="date">June 10, 2017</span>
-                  <h3 class="timeline-title">First We Meet</h3>
+                  <span class="date">Feb 08, 2022</span>
+                  <h3 class="timeline-title">Marriage Proposal</h3>
                 </div>
                 <div class="timeline-body">
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in .</p>
+                  <p>groom family ask a marriage proposal to bridegroom family </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted animate-box">
+              <div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+              <div class="timeline-panel ftco-animate">
+                <div class="icon icon-right"><span class="flaticon-dove-1"></span></div>
+                <div class="timeline-heading">
+                  <span class="date">Feb 09, 2022</span>
+                  <h3 class="timeline-title">Proposal Accepted</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>bride-groom family accepted marriage proposal.</p>
+                </div>
+              </div>
+            </li>
+            <li class="animate-box">
+              <div class="timeline-badge" style="background-image:url(images/couple-4.jpg);"></div>
+              <div class="timeline-panel ftco-animate text-md-right">
+                <div class="icon icon-left"><span class="flaticon-dove-1"></span></div>
+                <div class="timeline-heading">
+                  <span class="date">Feb 08, 2023</span>
+                  <h3 class="timeline-title">We're Engaged</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>we are Engaged with the blessing of our family members.</p>
                 </div>
               </div>
             </li>
@@ -143,40 +267,11 @@
               <div class="timeline-panel ftco-animate">
                 <div class="icon icon-right"><span class="flaticon-dove-1"></span></div>
                 <div class="timeline-heading">
-                  <span class="date">June 10, 2017</span>
-                  <h3 class="timeline-title">First Date</h3>
+                  <span class="date">Feb 14, 2024</span>
+                  <h3 class="timeline-title">Marriage Date</h3>
                 </div>
                 <div class="timeline-body">
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in .</p>
-                </div>
-              </div>
-            </li>
-            <li class="animate-box">
-              <div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
-              <div class="timeline-panel ftco-animate text-md-right">
-                <div class="icon icon-left"><span class="flaticon-dove-1"></span></div>
-                <div class="timeline-heading">
-                  <span class="date">June 14, 2017</span>
-                  <h3 class="timeline-title">In A Relationship</h3>
-                </div>
-                <div class="timeline-body">
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in .</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted animate-box">
-              <div class="timeline-badge" style="background-image:url(images/couple-4.jpg);"></div>
-              <div class="timeline-panel ftco-animate">
-                <div class="icon icon-right"><span class="flaticon-dove-1"></span></div>
-                <div class="timeline-heading">
-                  <span class="date">May. 10, 2019</span>
-                  <h3 class="timeline-title">We're Engaged</h3>
-                </div>
-                <div class="timeline-body">
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in .</p>
+                  <p>We are getting marriage by the blessing of god and our families .</p>
                 </div>
               </div>
             </li>
@@ -198,21 +293,39 @@
       <div class="row">
         <div class="col-md-12">
           <div class="carousel-friends owl-carousel ftco-owl ftco-animate">
+
             <div class="item">
               <div class="people text-center">
-                <div class="img" style="background-image: url(images/groom-men-1.jpg);"></div>
+                <div class="img" style="background-image: url(images/groom-men-00.jpg);"></div>
                 <div class="text">
-                  <h3>Mark Tomy</h3>
-                  
+                  <h3>Sudheer & Sunitha</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-01.jpg);"></div>
+                <div class="text">
+                  <h3>Sai</h3>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-1.jpg);"></div>
+                <div class="text">
+                  <h3>Lokesh</h3>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="people text-center">
                 <div class="img" style="background-image: url(images/groom-men-2.jpg);"></div>
                 <div class="text">
-                  <h3>John Henceworth</h3>
-                 
+                  <h3>Anil Kumar</h3>
+            
                 </div>
               </div>
             </div>
@@ -220,47 +333,96 @@
               <div class="people text-center">
                 <div class="img" style="background-image: url(images/groom-men-3.jpg);"></div>
                 <div class="text">
-                  <h3>Rey Cooper</h3>
-                 
+                  <h3>Chandini</h3>
+            
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="people text-center">
-                <div class="img" style="background-image: url(images/groom-men-4.jpg);"></div>
+                <div class="img" style="background-image: url(images/groom-men-vam.jpg);"></div>
                 <div class="text">
-                  <h3>Robert Chan</h3>
-                  
+                  <h3>Omkar</h3>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="people text-center">
-                <div class="img" style="background-image: url(images/bridesmaid-1.jpg);"></div>
+                <div class="img" style="background-image: url(images/groom-men-rush.jpg);"></div>
                 <div class="text">
-                  <h3>Srilekha</h3>
-                  
+                  <h3>Hrushikesh</h3>
                 </div>
               </div>
             </div>
+            
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-nik.jpg);"></div>
+                <div class="text">
+                  <h3>Sanatan</h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-san.jpg);"></div>
+                <div class="text">
+                  <h3>Sanvitha</h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-akjyo.jpg);"></div>
+                <div class="text">
+                  <h3>Jyoshna & Akhila</h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-5.jpg);"></div>
+                <div class="text">
+                  <h3>Priyanka & Jayasri</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-6.jpg);"></div>
+                <div class="text">
+                  <h3>Harsha & Akshay</h3>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-men-o4.jpg);"></div>
+                <div class="text">
+                  <h3>JaiRam</h3>
+                </div>
+              </div>
+            </div>
+              <div class="item">
+                <div class="people text-center">
+                  <div class="img" style="background-image: url(images/groom-men-4.jpg);"></div>
+                  <div class="text">
+                    <h3>Sunita</h3>
+                  </div>
+                </div>
+              </div>
+            
             <div class="item">
               <div class="people text-center">
                 <div class="img" style="background-image: url(images/bridesmaid-2.jpg);"></div>
                 <div class="text">
-                  <h3>Sahsatra</h3>
-               
+                  <h3>Sahsatra</h3>               
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="people text-center">
-                <div class="img" style="background-image: url(images/bridesmaid-3.jpg);"></div>
-                <div class="text">
-                  <h3>Alekhya</h3>
-                  <!-- <span>Bridesmaid</span> -->
-                </div>
-              </div>
-            </div>
+            
             <div class="item">
               <div class="people text-center">
                 <div class="img" style="background-image: url(images/bridesmaid-4.jpg);"></div>
@@ -279,6 +441,42 @@
                 </div>
               </div>
             </div>
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/bridesmaid-1.jpg);"></div>
+                <div class="text">
+                  <h3>Srilekha</h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/bridesmaid-6.jpg);"></div>
+                <div class="text">
+                  <h3>Srikanth</h3>
+                  <!-- <span>Bridesmaid</span> -->
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/groom-kav.jpg);"></div>
+                <div class="text">
+                  <h3>Kavya</h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="people text-center">
+                <div class="img" style="background-image: url(images/bridesmaid-3.jpg);"></div>
+                <div class="text">
+                  <h3>Alekhya</h3>
+                  <!-- <span>Bridesmaid</span> -->
+                </div>
+              </div>
+            </div>
+
+             
           </div>
         </div>
       </div>
@@ -296,7 +494,7 @@
               <div class="place img">
                 <div class="text text-center">
                   <div class="icon d-flex align-items-center justify-content-center"><span
-                      class="flaticon-church"></span>
+                      class="flaticon-"><img src="images/temple.png" alt=""></span>
                   </div>
                   <h3>The Marriage Ceremony</h3>
                   <p><span>14-Feb-2024</span><br><span>09:56 pm</span></p>
@@ -309,7 +507,7 @@
             <div class="col-md-6 d-flex ftco-animate">
               <div class="place img">
                 <div class="text text-center">
-                  <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-cake"></span>
+                  <div class="icon d-flex align-items-center justify-content-center"><span ><img src="images/lunch.png" alt=""></span>
                   </div>
                   <h3>The Reception</h3>
                   <p><span>16-Feb-2024</span><br><span>12:00 pm</span></p>
@@ -325,6 +523,8 @@
     </div>
   </section>
 
+ 
+
   <section class="ftco-section ftco-no-pb" id="gallery-section">
     <div class="container-fluid px-0">
       <div class="row no-gutters justify-content-center pb-5">
@@ -333,74 +533,225 @@
           <h2 class="mb-3">Photo Gallery</h2>
         </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-1.jpg"
+      <div class="row no-gutters gallery2">
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img01.JPG"
             class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-1.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+            style="background-image: url(images/gallery/img01.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-2.jpg"
+
+        <!-- Add the "gallery-item" class to the other divs as well -->
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img02.JPG"
             class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-2.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+            style="background-image: url(images/gallery/img02.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-3.jpg"
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img03.JPG"
             class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-3.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+            style="background-image: url(images/gallery/img3.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-4.jpg"
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img04.JPG"
             class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-4.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+            style="background-image: url(images/gallery/img4.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-5.jpg"
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img05.JPG"
             class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-5.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+            style="background-image: url(images/gallery/img05.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-6.jpg"
-            class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-6.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img6.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img006.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-7.jpg"
+
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img06.JPG"
             class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-7.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+            style="background-image: url(images/gallery/img06.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
-        <div class="col-md-3 ftco-animate">
-          <a href="images/gallery-8.jpg"
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img07.JPG"
             class="gallery img image-popup d-flex align-items-center justify-content-center"
-            style="background-image: url(images/gallery-8.jpg);">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dove-1"></span>
-            </div>
+            style="background-image: url(images/gallery/img007.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
           </a>
         </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img08.JPG"
+            class="gallery img image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img8.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img09.JPG"
+            class="gallery img image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img09.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img10.JPG"
+            class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img10.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img11.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img11.jpg);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img12.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img12.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img13.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img13.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img14.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img14.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img15.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img015.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img16.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img016.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img17.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img017.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img18.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img018.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img19.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img019.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img20.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img20.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img21.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img21.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+        
+        <div class="col-md-3 ftco-animate gallery-item">
+          <a href="images/gallery/img0022.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+            style="background-image: url(images/gallery/img0022.JPG);">
+            <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+          </a>
+        </div>
+
+          <div class="col-md-3 ftco-animate gallery-item">
+            <a href="images/gallery/img22.JPG" class="gallery  image-popup d-flex align-items-center justify-content-center"
+              style="background-image: url(images/gallery/img022.JPG);">
+              <div class=" d-flex align-items-center justify-content-center"><span class=""></span></div>
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
       </div>
     </div>
+
+    
   </section>
+
+  <div id="myModal" class="modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImg" class="modal-img">
+    </div>
+  </div>
+
+  <script>
+    function openModal(imgSrc) {
+      document.getElementById("myModal").style.display = "flex";
+      document.getElementById("modalImg").src = imgSrc;
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+
+
+
+
+
+
+
   <footer class="ftco-footer ftco-section">
     <div class="overlay"></div>
     <div class="container">
@@ -453,5 +804,6 @@
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/twohearts/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Sep 2023 07:16:46 GMT -->
+
 
 </html>

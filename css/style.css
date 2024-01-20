@@ -2601,6 +2601,7 @@ textarea.form-control {
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
+  
 }
 
 .btn {
@@ -2952,83 +2953,6 @@ textarea.form-control {
   padding: 8px 10px;
 }
 
-.rsvp-form {
-  padding: 0;
-}
-
-.rsvp-form .form-group {
-  margin-bottom: 10px;
-}
-
-.rsvp-form .select-wrap {
-  position: relative;
-}
-
-.rsvp-form .select-wrap .icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 52px;
-  height: 52px;
-}
-
-.rsvp-form .select-wrap .icon span {
-  color: #d291bc;
-}
-
-.rsvp-form .select-wrap select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.rsvp-form .form-control {
-  height: 50px !important;
-  background: transparent !important;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 16px;
-  border-radius: 0px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: none;
-  font-weight: 600;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-color: rgba(210, 145, 188, 0.5);
-}
-
-.rsvp-form .form-control:focus,
-.rsvp-form .form-control:active {
-  border-color: #000000;
-}
-
-.rsvp-form .form-control::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.rsvp-form .form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.rsvp-form .form-control:-ms-input-placeholder {
-  /* IE 10+ */
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.rsvp-form .form-control:-moz-placeholder {
-  /* Firefox 18- */
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.rsvp-form .form-control:focus,
-.rsvp-form .form-control:active {
-  border-color: #d291bc;
-}
-
-.rsvp-form textarea.form-control {
-  height: inherit !important;
-}
 
 .gallery {
   width: 100%;
@@ -3037,6 +2961,8 @@ textarea.form-control {
   margin-bottom: 0;
   position: relative;
   z-index: 0;
+  border-radius: 10px;
+  
 }
 
 .gallery:after {
@@ -3145,6 +3071,7 @@ textarea.form-control {
   position: absolute;
   top: 0;
   left: 0;
+  
   right: 0;
   bottom: 0;
   content: '';
