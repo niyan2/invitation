@@ -2081,20 +2081,20 @@ body {
   font-size: 17px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999999;
+  color: #251616;
 }
 
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #d291bc;
+  color: #e066b6;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #d291bc;
+  color: #e066b6;
   outline: none !important;
 }
 
@@ -2129,7 +2129,7 @@ h5,
 
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #d291bc !important;
+    background: #e066b6 !important;
     position: relative;
     top: 0;
     padding-top: 0;
@@ -2758,7 +2758,7 @@ textarea.form-control {
   width: 43%;
   position: relative;
   z-index: 0;
-  background: #d291bc;
+  background: #bd1c87;
   padding: 50px;
   -webkit-box-shadow: 0px 10px 32px -19px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 0px 10px 32px -19px rgba(0, 0, 0, 0.36);
@@ -2949,7 +2949,7 @@ textarea.form-control {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
-  border: 1px solid #f0d9e8;
+  border: 1px solid #e066b6;
   padding: 8px 10px;
 }
 
@@ -2971,7 +2971,7 @@ textarea.form-control {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #d291bc;
+  background: #e066b6;
   opacity: 0;
   content: '';
   z-index: -1;
@@ -3032,10 +3032,10 @@ textarea.form-control {
   margin-bottom: 5px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
-  color: #d291bc;
+  color: #bd1c87;
   letter-spacing: 2px;
   font-weight: 900;
-  border: 1px dashed #d291bc;
+  border: 1px dashed #d34aa5;
   display: inline-block;
   padding: 0 10px;
 }
@@ -3045,7 +3045,7 @@ textarea.form-control {
   font-size: 80px;
   font-weight: normal;
   font-family: "Rochester", cursive;
-  color: #d291bc;
+  color: #bd1c87;
 }
 
 @media (max-width: 991.98px) {
